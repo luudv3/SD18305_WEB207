@@ -1,13 +1,29 @@
 <div>
     <h1>{{title}}</h1>
     <h1>Hiển thị thông tin</h1>
-    <form action="">
+    <form ng-submit="themMoi()">
         <label for="" class="form-label">Họ và tên</label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" ng-model="inputValue.name">
 
         <label for="" class="form-label">địa chỉ</label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" ng-model="inputValue.address">
 
         <button class="btn btn-success">Thêm mới nhân viên</button>
+        
+    </form>
+    <!-- 
+        Nhập form điền vào 2 số
+        Thực hiện việc tính tổng 2 số
+    
+    -->
+    <form ng-submit="tinhTong ()">
+        <label for="" class="form-label">Số thứ 1</label>
+        <input type="text" class="form-control" ng-model="number.one">
+
+        <label for="" class="form-label">Số thứ 2</label>
+        <input type="text" class="form-control" ng-model="number.two">
+
+        <button class="btn btn-success">Kết quả</button>
+        <p ng-if="sum">Tổng của 2 số là {{ sum }}</p>
     </form>
 </div>

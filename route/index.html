@@ -23,7 +23,10 @@
                     <a class="nav-link active" aria-current="page" href="#!/trang-chu">Trang chủ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Giới thiệu</a>
+                    <a class="nav-link" href="#!/gioi-thieu/12/luudv3">Giới thiệu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#!">Tin tức</a>
                   </li>
                 </ul>
               </div>
@@ -37,6 +40,7 @@
         <h1 class="bg-secondary">Đây là footer</h1>
     </footer>
     <script src="./controller/TrangchuController.js"></script>
+    <script src="./controller/GioiThieuController.js"></script>
     <script>
         let myApp = angular.module('appRoute',['ngRoute']);
         //ngRoute: cung cấp tính năng định tuyến
@@ -52,11 +56,17 @@
                     }
                 )
                 .when(
-                    '/gioi-thieu', // gọi route
+                    '/gioi-thieu/:id/:name', // gọi route
                     {
                         templateUrl: 'views/gioithieu.html',
-                        controller: TrangchuController
+                        controller: GioiThieuController
                     }
+                )
+                //Nếu như click vào route không xác định
+                .otherwise(
+                  {
+                    redirectTo: '/trang-chu'
+                  }
                 )
         });
     </script>
