@@ -1,19 +1,25 @@
 <div>
-    <h1>{{title}}</h1>
-    <table class="table">
-        <thead>
-            <th>STT</th>
-            <th>Họ và tên</th>
-            <th>Năm sinh</th>
-            <th>Chuyên ngành</th>
-            <th>Thao tác</th>
-        </thead>
-        <tr ng-repeat="item in liststudents">
-            <td>{{ $index + 1 }}</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+    <h1 class="text-center">{{title}}</h1>
+    <button class="btn btn-success">Thêm mới</button>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Năm sinh</th>
+                <th>Chuyên ngành</th>
+                <th>Thao tác</th>
+            </thead>
+            <tr ng-repeat="item in liststudents">
+                <td>{{ $index + 1 }}</td>
+                <td>{{ item.ten}}</td>
+                <td>{{ item.namsinh }}</td>
+                <td>{{ item.chuyennganh}}</td>
+                <td>
+                    <button class="btn btn-warning">Chi tiết</button>
+                    <button class="btn btn-danger">Xóa</button>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
