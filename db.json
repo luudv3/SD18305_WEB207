@@ -1,50 +1,16 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "title": "json-server",
-        "author": "typicode"
-      },
-      {
-        "id": 2,
-        "title": "luudv3",
-        "author": "dz"
-      }
-    ],
-    "comments": [
-      {
-        "id": 1,
-        "body": "some comment",
-        "postId": 1
-      }
-    ],
-    "profile": {
-      "name": "typicode"
-    },
-    "students": [
-      {
-        "ten": "Đặng Vũ Lưu đẹp trai",
-        "namsinh": 2005,
-        "chuyennganh": "CNTT",
-        "id": 1
-      },
-      {
-        "ten": "Luudv3 ĐZ",
-        "namsinh": 2005,
-        "chuyennganh": "CNTT",
-        "id": 2
-      },
-      {
-        "ten": "ádasdasdad",
-        "namsinh": "ádasdasdasd",
-        "chuyennganh": "ádasdadasds",
-        "id": 3
-      },
-      {
-        "ten": "Luudv3",
-        "namsinh": "2005",
-        "chuyennganh": "CNTT",
-        "id": 4
-      }
+    "student": [
+        {
+            "ten": "Đặng Vũ Lưu",
+            "namsinh": 2005,
+            "chuyennganh": "CNTT",
+            "id": 1
+        },
+        {
+            "ten": "Đặng Vũ Lưu 2",
+            "namsinh": 2004,
+            "chuyennganh": "CNTT",
+            "id": 2
+        }
     ]
-  }
+}
