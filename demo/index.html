@@ -32,6 +32,7 @@
         <h1 class="bg-secondary">Đây là footer</h1>
     </footer>
     <script src="./controller/ListStudentController.js"></script>
+    <script src="./controller/AddStudentController.js"></script>
     <script>
         let myApp = angular.module('appRoute', ['ngRoute']);
         myApp.config(function ($routeProvider){
@@ -41,6 +42,13 @@
                 {
                     templateUrl: 'views/liststudent.html',
                     controller: ListStudentController
+                }
+            )
+            .when(
+                '/add-student',
+                {
+                    templateUrl: 'views/addstudent.html',
+                    controller: AddStudentController
                 }
             )
         });

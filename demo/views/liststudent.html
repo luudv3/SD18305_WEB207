@@ -1,6 +1,9 @@
 <div>
     <h1 class="text-center">{{title}}</h1>
-    <button class="btn btn-success">Thêm mới</button>
+    <a href="#!/add-student">
+        <button class="btn btn-success">Thêm mới</button>
+    </a>
+    
     <div class="card-body">
         <table class="table">
             <thead>
@@ -17,7 +20,7 @@
                 <td>{{ item.chuyennganh}}</td>
                 <td>
                     <button class="btn btn-warning">Chi tiết</button>
-                    <button class="btn btn-danger">Xóa</button>
+                    <button ng-click="deleteStudent(item.id)" class="btn btn-danger">Xóa</button>
                 </td>
             </tr>
         </table>

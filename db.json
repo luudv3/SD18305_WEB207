@@ -1,16 +1,22 @@
 {
-    "student": [
-        {
-            "ten": "Đặng Vũ Lưu",
-            "namsinh": 2005,
-            "chuyennganh": "CNTT",
-            "id": 1
-        },
-        {
-            "ten": "Đặng Vũ Lưu 2",
-            "namsinh": 2004,
-            "chuyennganh": "CNTT",
-            "id": 2
-        }
-    ]
+  "student": [
+    {
+      "ten": "Đặng Vũ Lưu",
+      "namsinh": 2005,
+      "chuyennganh": "CNTT",
+      "id": "1"
+    },
+    {
+      "ten": "Đặng Vũ Lưu 2",
+      "namsinh": 2004,
+      "chuyennganh": "CNTT",
+      "id": "2"
+    },
+    {
+      "id": "920e",
+      "ten": "Luân",
+      "namsinh": "2005",
+      "chuyennganh": "CNTT"
+    }
+  ]
 }
